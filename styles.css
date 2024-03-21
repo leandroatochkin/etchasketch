@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: darkred;
+}
+
+
+#title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title{
+    color: azure;
+}
+#footer{
+    color: azure;
+}
+#button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#button-container > button {
+    background-color: orangered;
+    color: linen;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 2px;
+    border: 0;
+    box-shadow: 2px 2px black;
+}
+
+#button-container > button:hover {
+    background-color: lightpink;
+    color: gray;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 2px;
+    border: 0;
+    box-shadow: 2px 2px black;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.square {
+    width: 20px; /* Adjust width to fit 16 squares horizontally */
+    height: 20px; /* Adjust height to fit 16 squares vertically */
+    background-color: lightgray; /* Adjust color as needed */
+    border: 1px solid black; /* Add border for visualization */
+    /* box-sizing: border-box;  */
+}
+
+
+.hovered{
+    
+animation: animate 1s ease forwards;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes animate {
+    0%{background-color: #9b59b6;}
+    25%{background-color: #3498db;}
+    50%{background-color: #16a085;}
+    100%{background-color: black;}
+}
+
